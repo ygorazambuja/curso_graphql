@@ -1,0 +1,9 @@
+type Mutation {
+  novoUsuario(dados: UsuarioInput!): Usuario!
+  excluirUsuario(filtro: UsuarioFiltro!): Usuario
+  alterarUsuario(filtro: UsuarioFiltro!, novosDados: UsuarioInput): Usuario
+
+  novoPerfil(dados: PerfilInput!): Perfil
+  alterarPerfil(filtro: PerfilFiltro!, novosDados: PerfilInput): Perfil
+  excluirPerfil(filtro: PerfilFiltro!): Perfil
+}
